@@ -1,12 +1,9 @@
-// Load reusable components
-function loadComponent(id, file) {
-    fetch(file)
-        .then(response => response.text())
-        .then(html => {
-            document.getElementById(id).innerHTML = html;
-        });
+async function loadComponents() {
+    await import('./navbar-component.js');
+    await import('./ComponentB.js');
+    await import('./ComponentC.js');
+    await import('./ComponentD.js');
 }
 
-// Load header and footer components
-loadComponent('navbar-container', '/global-section/navbar.html');
-loadComponent('footer-container', '/footer.html');
+// Call the function to load the components
+loadComponents();

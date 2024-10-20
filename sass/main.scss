@@ -1,0 +1,12 @@
+@import "base/variables";
+
+//import bootstrap
+@import "../node_modules/bootstrap/scss/bootstrap";
+
+//layout
+@import "layout/header";
+
+//sections
+// @import "section/hero-main";
+@import "section/cta-primary";
+
